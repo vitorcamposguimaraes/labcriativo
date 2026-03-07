@@ -1,0 +1,25 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1200" height="900" rx="30" fill="#0E1730"/>
+<rect x="68" y="142" width="1064" height="604" rx="34" fill="#1A264A" stroke="#507FFF" stroke-width="10"/>
+<rect x="144" y="216" width="280" height="464" rx="26" fill="#20305C"/>
+<rect x="458" y="216" width="596" height="202" rx="26" fill="#20305C"/>
+<rect x="458" y="444" width="278" height="236" rx="26" fill="#20305C"/>
+<rect x="776" y="444" width="278" height="236" rx="26" fill="#20305C"/>
+<rect x="150" y="114" width="400" height="74" rx="22" fill="#FFD84D"/>
+<text x="188" y="161" fill="#112548" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="700">ESTÁCIO EXPERIENCE HUB</text>
+<circle cx="284" cy="440" r="118" fill="#2B4378"/>
+<circle cx="284" cy="440" r="88" fill="#3D7CFF" fill-opacity="0.68"/>
+<path d="M210 458L258 506L356 388" stroke="#FFD84D" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="190" y="612" fill="#DCE7FF" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">JORNADA DE CARREIRAS</text>
+<text x="510" y="286" fill="#DCE7FF" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700">CREATOR STUDIO + PODCAST</text>
+<rect x="526" y="308" width="460" height="74" rx="18" fill="#0F1735" stroke="#FF4F7C" stroke-width="6"/>
+<circle cx="562" cy="345" r="12" fill="#FF4F7C"/>
+<circle cx="604" cy="345" r="12" fill="#FFD84D"/>
+<circle cx="646" cy="345" r="12" fill="#17C964"/>
+<rect x="500" y="490" width="194" height="144" rx="18" fill="#0F1735" stroke="#FFD84D" stroke-width="6"/>
+<text x="530" y="566" fill="#FFF6CC" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">IA AVATAR</text>
+<rect x="818" y="490" width="194" height="144" rx="18" fill="#0F1735" stroke="#3D7CFF" stroke-width="6"/>
+<text x="846" y="566" fill="#DCE7FF" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">BATTLE LAB</text>
+<path d="M110 770C318 712 450 744 592 770C786 805 942 790 1090 732" stroke="#FF4F7C" stroke-width="10" stroke-linecap="round" stroke-dasharray="20 18"/>
+<text x="146" y="814" fill="#DCE7FF" font-family="Arial, Helvetica, sans-serif" font-size="24">Fachada com LED • interatividade • conteúdo ao vivo • leads</text>
+</svg>

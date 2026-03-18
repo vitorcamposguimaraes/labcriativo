@@ -1,442 +1,841 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Brand Experience no Rock in Rio 2026</title>
-  <meta name="description" content="Site de pesquisa e referência sobre Brand Experience e Live Marketing no Rock in Rio 2026, com foco em insights para o stand da Estácio." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <div class="bg-grid"></div>
+<html lang="pt-BR" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rock in Rio 2026 • Brand Experience dos Patrocinadores</title>
+    <meta
+      name="description"
+      content="Análise de Brand Experience dos principais patrocinadores do Rock in Rio 2026, com foco em ativações, live marketing, experiência de marca e arquitetura de festival."
+    />
 
-  <header class="hero" id="topo">
-    <nav class="nav wrap">
-      <div class="brand">RIR 2026 · Brand Experience</div>
-      <div class="nav-links">
-        <a href="#conceito">Conceito</a>
-        <a href="#patrocinadores">Marcas</a>
-        <a href="#estacio">Estácio</a>
-        <a href="#fontes">Fontes</a>
+    <!-- Bootstrap / Icons / AOS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+      rel="stylesheet"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="90" tabindex="0">
+    <!-- Progress Bar -->
+    <div id="scrollProgress"></div>
+
+    <!-- Floating Orbs -->
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="bg-orb orb-3"></div>
+
+    <!-- Navbar -->
+    <nav id="mainNav" class="navbar navbar-expand-lg fixed-top navbar-glass">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+          <span class="brand-mark">
+            <i class="bi bi-soundwave"></i>
+          </span>
+          <span class="brand-text">
+            <strong>Brand Experience</strong>
+            <small>Rock in Rio 2026</small>
+          </span>
+        </a>
+
+        <button
+          class="navbar-toggler border-0 shadow-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Alternar navegação"
+        >
+          <i class="bi bi-list fs-1"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item"><a class="nav-link" href="#overview">Visão Geral</a></li>
+            <li class="nav-item"><a class="nav-link" href="#eixos">Eixos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#marcas">Marcas</a></li>
+            <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+            <li class="nav-item"><a class="nav-link" href="#insights">Insights</a></li>
+            <li class="nav-item ms-lg-2">
+              <a class="btn btn-brand rounded-pill px-4" href="#conclusao">
+                Ver conclusão
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
-    <div class="wrap hero-grid">
-      <div class="hero-copy">
-        <span class="eyebrow">Pesquisa + site pronto para GitHub Pages</span>
-        <h1>Brand Experience no Rock in Rio 2026</h1>
-        <p class="lead">
-          Um site para apresentar benchmarks de marcas,
-          lógica de ativação em festivais e sugestões estratégicas do
-          estande da Universidade Estácio.
-        </p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#patrocinadores">Ver análise das marcas</a>
-          <a class="btn btn-secondary" href="#estacio">Colaborações de ideias para o estande da Estácio</a>
-        </div>
-        <ul class="hero-facts">
-          <li><strong>Datas:</strong> 4, 5, 6, 7, 11, 12 e 13 de setembro de 2026</li>
-          <li><strong>Leitura:</strong> Foco em experiência de marca, ativações e live marketing</li>
-          <li><strong>Uso:</strong> Conteúdo para alunos que participarão do enveto</li>
-        </ul>
-      </div>
-      <div class="hero-art">
-        <img src="images/Logos/Logo_LabCriativo_1.png" alt="Ilustração abstrata de festival, palco e ativações de marca" />
-      </div>
-    </div>
-  </header>
+    <!-- Hero -->
+    <header id="home" class="hero-section position-relative overflow-hidden">
+      <div class="hero-overlay"></div>
 
-  <main>
-    <section class="section wrap" id="conceito">
-      <div class="section-heading">
-        <span class="kicker">Fundamentos</span>
-        <h2>Brand Experience no Festival</h2>
-        <p>
-          No Rock in Rio, a marca não disputa somente mídia. Ela disputa tempo de permanência,
-          lembrança, compartilhamento social, utilidade percebida e repertório
-          cultural. Por isso, a análise abaixo observa cinco lentes: presença física, utilidade,
-          entretenimento, tecnologia e desdobramento em conteúdo.
-        </p>
-      </div>
-
-      <div class="pillars">
-        <article class="pillar-card">
-          <h3>1. Atração</h3>
-          <p>Arquitetura, cenografia, volumetria, fila, fachada e ponto de curiosidade.</p>
-        </article>
-        <article class="pillar-card">
-          <h3>2. Interação</h3>
-          <p>O que o visitante faz, toca, experimenta, cria, joga, canta ou leva embora.</p>
-        </article>
-        <article class="pillar-card">
-          <h3>3. Conteúdo</h3>
-          <p>Capacidade de virar foto, vídeo, UGC, cobertura de imprensa e memória social.</p>
-        </article>
-        <article class="pillar-card">
-          <h3>4. Dados</h3>
-          <p>QR codes, app, cadastro, recompensa, CRM e continuidade após o evento.</p>
-        </article>
-        <article class="pillar-card">
-          <h3>5. Propósito</h3>
-          <p>Quando a experiência traduz valores da marca e não apenas distribui brinde.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section section-dark" id="patrocinadores">
-      <div class="wrap">
-        <div class="section-heading narrow light">
-          <span class="kicker">Benchmark setorial</span>
-          <h2>Marcas observadas</h2>
-          <p>
-            O bloco abaixo reúne as marcas pedidas por você. Quando a marca aparece na listagem
-            oficial atual do Rock in Rio 2026, ela é tratada como presença confirmada na página de
-            patrocinadores. Quando a marca foi mapeada em 2024, mas não apareceu na página oficial
-            atual consultada, ela entra como benchmark histórico de ativação para comparação.
-          </p>
-        </div>
-
-        <div class="legend">
-          <span class="tag official">Presença oficial consultada para 2026</span>
-          <span class="tag historic">Benchmark de edições anteriores</span>
-          <span class="tag support">Apoiadora / apoio</span>
-        </div>
-
-        <div class="cards-grid">
-          <article class="brand-card estacio">
-            <div class="card-top">
-              <span class="status support">Apoiadora</span>
-              <h3><a href="estacio_2024.html">Universidade Estácio</a></h3>
+      <div class="container position-relative hero-content">
+        <div class="row align-items-center g-5 min-vh-100 py-5">
+          <div class="col-lg-7">
+            <div class="hero-badges mb-4" data-aos="fade-up">
+              <span class="pill-badge"><i class="bi bi-stars"></i> Site pronto para GitHub Pages</span>
+              <span class="pill-badge"><i class="bi bi-lightning-charge"></i> Bootstrap + CSS premium</span>
             </div>
-		    <a href="estacio_2024.html"><img src="images/estacio/Estande_03.png" alt="Ilustração abstrata de festival, palco e ativações de marca"></a>
-<p class="summary">Educação transformada em experiência, carreira, creator economy e laboratório vivo.</p>
-            <ul>
-              <li><strong>Papel estratégico:</strong> converter presença em pertencimento e empregabilidade.</li>
-              <li><strong>Boa direção criativa:</strong> maker space, estúdio creator, IA aplicada à criação e experiências de cursos.</li>
-              <li><strong>Live marketing:</strong> ativação que mistura orientação profissional, entretenimento e conteúdo ao vivo.</li>
-            </ul>
-          </article>
 
-          <article class="brand-card">
-            <div class="card-top">
-              <span class="status official">Oficial 2026</span>
-              <h3><a href="itau_2025.html">Itaú</a></h3>
+            <h1 class="display-3 fw-bold hero-title" data-aos="fade-up" data-aos-delay="100">
+              Brand Experience no
+              <span class="text-gradient">Rock in Rio 2026</span>
+            </h1>
+
+            <p class="hero-lead mt-4" data-aos="fade-up" data-aos-delay="200">
+              Uma leitura estratégica sobre como os principais patrocinadores do
+              festival transformam presença de marca em
+              <strong>experiência, entretenimento, utilidade, cultura e memória</strong>.
+            </p>
+
+            <div class="d-flex flex-wrap gap-3 mt-4" data-aos="fade-up" data-aos-delay="300">
+              <a href="#marcas" class="btn btn-brand btn-lg rounded-pill px-4">
+                Explorar marcas
+              </a>
+              <a href="#galeria" class="btn btn-outline-light btn-lg rounded-pill px-4">
+                Ver galeria
+              </a>
             </div>
-		    <a href="itau_2025.html"><img src="images/itau/itau_estande.jpeg" alt="Ilustração abstrata de festival, palco e ativações de marca"></a>
-<p class="summary">Marca com histórico de grandes estruturas proprietárias, brasilidade, benefícios e espaços de convivência.</p>
-            <ul>
-              <li><strong>Território:</strong> cultura, acesso, conveniência e recompensa.</li>
-              <li><strong>Formato vencedor:</strong> roda-gigante, pavilhão, brindes com QR code, shows intermediários.</li>
-              <li><strong>Insight:</strong> o banco deixa de parecer serviço e passa a ser anfitrião da jornada.</li>
-            </ul>
-          </article>
 
-          <article class="brand-card">
-            <div class="card-top">
-              <span class="status official">Oficial 2026</span>
-              <h3><a href="heineken_2025.html">Heineken</a></h3>
+            <div class="hero-stats row g-3 mt-5" data-aos="fade-up" data-aos-delay="400">
+              <div class="col-sm-4">
+                <div class="stat-card">
+                  <span class="stat-number">15</span>
+                  <span class="stat-label">marcas analisadas</span>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="stat-card">
+                  <span class="stat-number">5</span>
+                  <span class="stat-label">eixos estratégicos</span>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="stat-card">
+                  <span class="stat-number">2026</span>
+                  <span class="stat-label">foco editorial</span>
+                </div>
+              </div>
             </div>
-		    <a href="heineken_2025.html"><img src="images/heineken/conexao/conexao_03.jpg" alt="Ilustração abstrata de festival, palco e ativações de marca"></a>
-<p class="summary">Experiência premium, música, noite, visualidade urbana e sensação de exclusividade.</p>
-            <ul>
-              <li><strong>Território:</strong> lifestyle musical e sofisticação acessível.</li>
-              <li><strong>Formato vencedor:</strong> experiências icônicas e de alta visibilidade, como a tirolesa.</li>
-              <li><strong>Insight:</strong> a marca ganha quando a ativação vira marco visual do festival.</li>
-            </ul>
-          </article>
+          </div>
 
-          <article class="brand-card">
-            <div class="card-top">
-              <span class="status official">Oficial 2026</span>
-              <h3><a href="cocacola_2025.html">Coca-Cola</a></h3>
+          <div class="col-lg-5">
+            <div class="hero-visual" data-aos="zoom-in" data-aos-delay="250">
+              <div class="hero-frame">
+                <img
+                  src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=1200&q=80"
+                  alt="Festival de música com iluminação noturna e multidão"
+                  class="img-fluid hero-image"
+                />
+                <div class="floating-card floating-card-1">
+                  <i class="bi bi-bank2"></i>
+                  <span>Itaú</span>
+                </div>
+                <div class="floating-card floating-card-2">
+                  <i class="bi bi-music-note-beamed"></i>
+                  <span>Coke Studio</span>
+                </div>
+                <div class="floating-card floating-card-3">
+                  <i class="bi bi-lightning"></i>
+                  <span>Live Marketing</span>
+                </div>
+              </div>
             </div>
-			  <a href="cocacola_2025.html"><img src="images/cocacola/cocacola_estande_01.png" alt="Ilustração abstrata de festival, palco e ativações de marca"></a>
-            <p class="summary">Conexão entre música, fandom, artistas e memorabilia compartilhável.</p>
-            <ul>
-              <li><strong>Território:</strong> celebração, pop culture e refrescância emocional.</li>
-              <li><strong>Formato vencedor:</strong> Coke Studio, collabs musicais, lata especial, backstage content.</li>
-              <li><strong>Insight:</strong> transforma consumo em prova social e lembrança física.</li>
-            </ul>
-          </article>
-
-          <article class="brand-card">
-            <div class="card-top">
-              <span class="status official">Oficial 2026</span>
-              <h3><a href="seara_2025_b.html">Seara</a></h3>
-            </div>
-			  <a href="seara_2025_b.html"><img src="images/seara/heineken_brand_02.jpg" alt="Ilustração abstrata de festival, palco e ativações de marca"></a>
-            <p class="summary">Alimento como utilidade, degustação e descanso energético durante a experiência.</p>
-            <ul>
-              <li><strong>Território:</strong> sabor, conveniência e pausa prazerosa.</li>
-              <li><strong>Formato vencedor:</strong> sampling, branded food moments, fila recompensada.</li>
-              <li><strong>Insight:</strong> o melhor brand experience pode ser resolver fome com personalidade.</li>
-            </ul>
-          </article>
-
-          <article class="brand-card">
-            <div class="card-top">
-              <span class="status official">Oficial 2026</span>
-              <h3><a href="Ipiranga_2024.html">Ipiranga</a></h3>
-            </div>
-			   <a href="Ipiranga_2024.html"><img src="images/ipiranga/ipiranga_estande_01.jpg" alt="Ilustração abstrata de festival, palco e ativações de marca"></a>-
-            <p class="summary">Marca de conveniência e jornada, com potencial para descanso, recarga e utilidade urbana.</p>
-            <ul>
-              <li><strong>Território:</strong> mobilidade, pausa, conveniência e serviços.</li>
-              <li><strong>Formato vencedor:</strong> charging, hidratação, lockers, experiências de rota.</li>
-              <li><strong>Insight:</strong> quanto mais útil, mais memorável.</li>
-            </ul>
-          </article>
-
-          <article class="brand-card">
-            <div class="card-top">
-              <span class="status official">Oficial 2026</span>
-              <h3><a href="kitkat_2025.html">KitKat</a></h3>
-            </div>
-			  <a href="kitkat_2025.html"><img src="images/kitkat/kitkat_estande_01.jpg" alt="Ilustração abstrata de festival, palco e ativações de marca"></a>
-            <p class="summary">A lógica do break funciona muito bem em festival: pausa divertida, snack e conteúdo rápido.</p>
-            <ul>
-              <li><strong>Território:</strong> pausa, humor e snackability.</li>
-              <li><strong>Formato vencedor:</strong> áreas de respiro, games rápidos, photobooths e brindes colecionáveis.</li>
-              <li><strong>Insight:</strong> microexperiências podem gerar grande circulação.</li>
-            </ul>
-          </article>
-
-          <article class="brand-card">
-            <div class="card-top">
-              <span class="status official">Oficial 2026</span>
-              <h3><a href="prudential_2024.html">Prudential</a></h3>
-            </div>
-			  <a href="prudential_2024.html"><img src="images/prudential/prudential_estande_01.jpg" alt="Ilustração abstrata de festival, palco e ativações de marca"></a>
-            <p class="summary">Proteção e futuro traduzidos em narrativa aspiracional, cuidado e legado.</p>
-            <ul>
-              <li><strong>Território:</strong> segurança emocional, planejamento e bem-estar.</li>
-              <li><strong>Formato vencedor:</strong> experiências de mensagem, memorial, promessa de futuro, ativações de cuidado.</li>
-              <li><strong>Insight:</strong> para seguros, emoção e significado são mais fortes que explicação técnica.</li>
-            </ul>
-          </article>
-
-          <article class="brand-card">
-            <div class="card-top">
-              <span class="status official">Oficial 2026</span>
-              <h3><a href="tim_2024.html">TIM</a></h3>
-            </div>
-			  <a href="tim_2024.html"><img src="images/tim/tim_estande_01.jpg" alt="Ilustração abstrata de festival, palco e ativações de marca"></a>
-            <p class="summary">Conectividade convertida em experiência visível, interativa e demonstrável.</p>
-            <ul>
-              <li><strong>Território:</strong> conexão, inovação e participação em rede.</li>
-              <li><strong>Formato vencedor:</strong> karaokê 5G com holografia, museu em realidade aumentada, experiência conectada.</li>
-              <li><strong>Insight:</strong> telecom funciona melhor quando a tecnologia é tangível e divertida.</li>
-            </ul>
-          </article>
-
-          <article class="brand-card">
-            <div class="card-top">
-              <span class="status official">Oficial 2026</span>
-              <h3><a href="natura_2024.html">Natura</a></h3>
-            </div>
-			  <a href="natura_2024.html"><img src="images/natura/natura_estande_2024.jpg" alt="Ilustração abstrata de festival, palco e ativações de marca"></a>
-            <p class="summary">Sinestesia, fragrância, sensorialidade e discurso de impacto positivo.</p>
-            <ul>
-              <li><strong>Território:</strong> corpo, natureza, música e sensações.</li>
-              <li><strong>Formato vencedor:</strong> instalações imersivas com som, cheiro e arquitetura orgânica.</li>
-              <li><strong>Insight:</strong> o sensorial faz a marca ser lembrada para além da visão.</li>
-            </ul>
-          </article>
-
-          <article class="brand-card">
-            <div class="card-top">
-              <span class="status official">Oficial 2026</span>
-              <h3><a href="doritos_pepsico_2022.html">Doritos via PepsiCo</a></h3>
-            </div>
-			  <a href="doritos_pepsico_2022.html"><img src="images/doritos/doritos_estande.jpg" alt="Ilustração abstrata de festival, palco e ativações de marca"></a>
-			  
-            <p class="summary">Marca de atitude, desafio, ousadia e inclusão com forte vocação para games e competição.</p>
-            <ul>
-              <li><strong>Território:</strong> provocação, desafio coletivo e cultura pop.</li>
-              <li><strong>Formato vencedor:</strong> experiências cronometradas, desafios em grupo, acessibilidade como atributo de marca.</li>
-              <li><strong>Insight:</strong> a marca cresce quando o público participa, não só quando experimenta.</li>
-            </ul>
-          </article>
-
-          <article class="brand-card">
-            <div class="card-top">
-              <span class="status official">Oficial 2026</span>
-              <h3><a href="superbet_2025.html">Superbet</a></h3>
-            </div>
-			  <a href="superbet_2025.html"><img src="images/superbet/superbet_estande.jpg" alt="Ilustração abstrata de festival, palco e ativações de marca"></a>
-            <p class="summary">Potencial de ativação orientado a emoção, placar, predição e adrenalina gamificada.</p>
-            <ul>
-              <li><strong>Território:</strong> jogo, estatística, torcida e recompensa.</li>
-              <li><strong>Formato vencedor:</strong> palpites, desafios de reação, ranking, missões e placares ao vivo.</li>
-              <li><strong>Insight:</strong> precisa usar mecânicas de jogo sem depender apenas de promoção comercial.</li>
-            </ul>
-          </article>
-
-          <article class="brand-card">
-            <div class="card-top">
-              <span class="status support">Apoiadora</span>
-              <h3>iFood</h3>
-            </div>
-			  <a href="ifood_2025.html"><img src="images/ifood/ifood_estande.jpg" alt="Ilustração abstrata de festival, palco e ativações de marca"></a>
-            <p class="summary">Serviço vira experiência quando reduz atrito, acelera pedido e cria conveniência percebida.</p>
-            <ul>
-              <li><strong>Território:</strong> entrega, conveniência, humor de marca e repertório pop.</li>
-              <li><strong>Formato vencedor:</strong> retirada facilitada, fila inteligente, cupom, game de pedido e ativações mobile-first.</li>
-              <li><strong>Insight:</strong> experiência de marca também é logística com personalidade.</li>
-            </ul>
-          </article>
-
-          <article class="brand-card">
-            <div class="card-top">
-              <span class="status historic">Benchmark</span>
-              <h3><a href="c&amp;a_2022.html">C&amp;A</a></h3>
-            </div>
-			  <a href="c&a_2022.html"><img src="images/C&A/C&A_estande.jpg" alt="Ilustração abstrata de festival, palco e ativações de marca"></a>
-            <p class="summary">Moda, festival wear, personalização e visibilidade estética do público.</p>
-            <ul>
-              <li><strong>Território:</strong> autoexpressão e look de festival.</li>
-              <li><strong>Formato vencedor:</strong> customização, styling bar, glitter station, drops e collabs.</li>
-              <li><strong>Insight:</strong> quando a pessoa veste a marca, ela vira mídia ambulante.</li>
-            </ul>
-          </article>
-
-          <article class="brand-card">
-            <div class="card-top">
-              <span class="status historic">Benchmark</span>
-              <h3><a href="volkswagen_2025.html">Volkswagen</a></h3>
-            </div>
-		    <a href="volkswagen_2025.html"><img src="images/Volkswagen/Volkswagen_estande.jpeg" alt="Ilustração abstrata de festival, palco e ativações de marca"></a>
-            <p class="summary">Automotivo ganha força quando vira ícone, mobilidade e objeto de desejo licenciável.</p>
-            <ul>
-              <li><strong>Território:</strong> design, deslocamento e cultura urbana.</li>
-              <li><strong>Formato vencedor:</strong> carros-ícone, edição especial, cabine imersiva e test-drive narrativo.</li>
-              <li><strong>Insight:</strong> exposição funciona melhor quando o veículo participa da história do evento.</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section wrap" id="galeria">
-      <div class="section-heading">
-        <span class="kicker">Imagens ilustrativas</span>
-        <h2>Referências visuais para o site</h2>
-        <p>
-          Para facilitar o uso no GitHub Pages sem depender de bancos externos, este pacote inclui
-          duas ilustrações SVG originais. Elas funcionam como artes conceituais de apoio visual.
-          Você pode depois substituir por fotos oficiais, prints autorizados ou imagens de press kit.
-        </p>
-      </div>
-
-      <div class="visual-grid">
-        <figure class="visual-card">
-          <img src="images/estacio/Estande_01.png" alt="Palco estilizado com luzes e público" />
-          <figcaption>Sugestão para Estande Estácio 2026</figcaption>
-        </figure>
-        <figure class="visual-card">
-          <img src="images/estacio/estande_circular_1.png" alt="Conceito visual de stand da Estácio com áreas de experiência" />
-          <figcaption>Conceito visual para a área de propostas da Estácio.</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <section class="section accent" id="estacio">
-      <div class="wrap estacio-grid">
-        <div>
-          <span class="kicker">Stand Estácio</span>
-          <h2>Sugestões de Brand Experience</h2>
-          <p>
-            A melhor posição para a Estácio é atuar como uma marca-ponte entre juventude,
-            criatividade, formação e futuro profissional. Em vez de um stand apenas promocional,
-            o ideal é um ambiente que entregue utilidade, autoria e espetáculo.
-          </p>
-
-          <div class="ideas-list">
-            <article class="idea-card">
-              <h3>1. Estácio Creator Studio</h3>
-              <p>Miniestúdio para gravar reels, shorts e entrevistas com edição rápida, teleprompter e templates visuais da marca.</p>
-            </article>
-            <article class="idea-card">
-              <h3>2. Jornada Profissões do Entretenimento</h3>
-              <p>Experiência interativa em telas e sensores mostrando carreiras em design, audiovisual, publicidade, jornalismo, games e produção.</p>
-            </article>
-            <article class="idea-card">
-              <h3>3. Avatar IA do Futuro Profissional</h3>
-              <p>O visitante responde a perguntas e recebe um pôster digital com seu perfil criativo e trilha de competências.</p>
-            </article>
-            <article class="idea-card">
-              <h3>4. Arena de Desafios Criativos</h3>
-              <p>Battle de campanhas, naming, motion e criação visual com ranking em tempo real e premiações.</p>
-            </article>
-            <article class="idea-card">
-              <h3>5. Mapping + Túnel de Imersão</h3>
-              <p>Projeções sincronizadas com música, cases de alunos e narrativas sobre inovação, cultura e educação.</p>
-            </article>
-            <article class="idea-card">
-              <h3>6. Podcast / Talk Pocket Stage</h3>
-              <p>Conteúdo ao vivo com professores, creators, ex-alunos e profissionais do mercado, gerando material para redes sociais.</p>
-            </article>
           </div>
         </div>
 
-        <aside class="estacio-panel">
-          <img src="images/estacio/estande_circular_2.png" alt="Ilustração de conceito do stand da Estácio" />
-          <div class="panel-box">
-            <h3>Arquitetura sugerida</h3>
-            <ul>
-              <li>Fachada noturna com luz e LED em azul, amarelo e vermelho</li>
-              <li>Pontos instagramáveis com volumetria inspirada em palco e backstage</li>
-              <li>Área central flexível para conteúdo, workshops e pocket shows</li>
-              <li>Captação de leads integrada a brindes digitais e certificado de participação</li>
-            </ul>
-          </div>
-        </aside>
+        <a href="#overview" class="scroll-indicator">
+          <span>Role</span>
+          <i class="bi bi-chevron-down"></i>
+        </a>
       </div>
-    </section>
-    <section class="section wrap" id="roadmap">
-      <div class="section-heading">
-        <span class="kicker">Operacional</span>
-        <h2><a href="deletar.html">Como transformar este evento em uma experiência memorável</a></h2>
-      </div>
-      <div class="steps">
-        <div class="step"><span>01</span><p>Suba a pasta inteira para um repositório público no GitHub.</p></div>
-        <div class="step"><span>02</span><p>No repositório, vá em Settings → Pages → Deploy from branch.</p></div>
-        <div class="step"><span>03</span><p>Escolha a branch <strong>main</strong> e a pasta <strong>root</strong>.</p></div>
-        <div class="step"><span>04</span><p>O link ficará no formato <strong>https://seuusuario.github.io/rock-in-rio-brand-experience-advanced</strong>.</p></div>
-      </div>
-    </section>
+    </header>
 
-    <section class="section section-dark" id="fontes">
-      <div class="wrap">
-        <div class="section-heading narrow light">
-          <span class="kicker">Base de referência</span>
-          <h2>Fontes consultadas para estruturar o conteúdo</h2>
-          <p>
-            Recomendo manter esta seção no site para transparência metodológica. Você pode transformar
-            em rodapé acadêmico, metodologia ou bibliografia web.
+    <!-- Overview -->
+    <section id="overview" class="section-padding">
+      <div class="container">
+        <div class="section-heading text-center mx-auto" data-aos="fade-up">
+          <span class="section-kicker">Panorama</span>
+          <h2 class="section-title">Leitura curatorial do ecossistema de marca</h2>
+          <p class="section-subtitle">
+            O Rock in Rio funciona como uma grande plataforma de
+            <strong>Brand Experience</strong>, onde as marcas deixam de apenas anunciar
+            e passam a construir jornadas imersivas.
           </p>
         </div>
-        <div class="sources">
-          <a href="https://rockinrio.com/rio/en/sponsors/" target="_blank" rel="noopener noreferrer">Rock in Rio · Sponsors 2026</a>
-          <a href="https://rockinrio.com/rio/pt-br/informacoes/" target="_blank" rel="noopener noreferrer">Rock in Rio · Informações oficiais 2026</a>
-          <a href="https://www.meioemensagem.com.br/marketing/rock-in-rio-2024-vendas" target="_blank" rel="noopener noreferrer">Meio &amp; Mensagem · marcas patrocinadoras 2024</a>
-          <a href="https://exame.com/marketing/rock-in-rio-2024-as-principais-ativacoes-de-marcas-na-edicao-de-40-anos-do-festival/" target="_blank" rel="noopener noreferrer">Exame · ativações de marcas no Rock in Rio 2024</a>
+
+        <div class="row g-4 mt-4">
+          <div class="col-lg-3 col-md-6" data-aos="fade-up">
+            <div class="insight-box h-100">
+              <div class="icon-wrap"><i class="bi bi-buildings"></i></div>
+              <h3>Arquitetura de marca</h3>
+              <p>
+                Estandes monumentais, estruturas imersivas, rooftops, lounges e espaços instagramáveis.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="insight-box h-100">
+              <div class="icon-wrap"><i class="bi bi-controller"></i></div>
+              <h3>Interatividade</h3>
+              <p>
+                Games, desafios físicos, experiências digitais, XR, holografia e participação ativa do público.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="insight-box h-100">
+              <div class="icon-wrap"><i class="bi bi-heart-pulse"></i></div>
+              <h3>Utilidade + emoção</h3>
+              <p>
+                Benefícios, descanso, recarga, conveniência, food experience e lembrança afetiva da marca.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="insight-box h-100">
+              <div class="icon-wrap"><i class="bi bi-recycle"></i></div>
+              <h3>ESG e propósito</h3>
+              <p>
+                Sustentabilidade, inclusão, educação, regeneração, circularidade e reputação cultural.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-  </main>
 
-  <footer class="footer wrap">
-    <div>
-      <strong>Projeto:</strong> Brand Experience no Rock in Rio 2026
-    </div>
-    <div>
-      Site pronto para GitHub Pages · Editável em HTML/CSS
-    </div>
-    <a href="#topo">Voltar ao topo ↑</a>
-  </footer>
+    <!-- Eixos -->
+    <section id="eixos" class="section-padding section-dark">
+      <div class="container">
+        <div class="section-heading text-center mx-auto" data-aos="fade-up">
+          <span class="section-kicker">Estratégia</span>
+          <h2 class="section-title">5 eixos de Brand Experience</h2>
+          <p class="section-subtitle">
+            Organização editorial ideal para transformar a pesquisa em narrativa digital clara, acadêmica e premium.
+          </p>
+        </div>
+
+        <div class="row g-4 mt-4">
+          <div class="col-lg-4" data-aos="zoom-in">
+            <div class="axis-card axis-gradient-1 h-100">
+              <span class="axis-number">01</span>
+              <h3>Experiências monumentais</h3>
+              <p>Itaú, Heineken, Superbet, Prudential, iFood</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="axis-card axis-gradient-2 h-100">
+              <span class="axis-number">02</span>
+              <h3>Música, socialidade e conteúdo</h3>
+              <p>Coca-Cola, KitKat, TIM, Doritos</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="axis-card axis-gradient-3 h-100">
+              <span class="axis-number">03</span>
+              <h3>Bem-estar, beleza e ESG</h3>
+              <p>Natura, Heineken, Volkswagen</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="zoom-in">
+            <div class="axis-card axis-gradient-4 h-100">
+              <span class="axis-number">04</span>
+              <h3>Food experience e conveniência</h3>
+              <p>Seara, iFood, Ipiranga</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="axis-card axis-gradient-5 h-100">
+              <span class="axis-number">05</span>
+              <h3>Educação, carreira e pertencimento</h3>
+              <p>Universidade Estácio</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marcas -->
+    <section id="marcas" class="section-padding">
+      <div class="container">
+        <div class="section-heading text-center mx-auto" data-aos="fade-up">
+          <span class="section-kicker">Análise por marca</span>
+          <h2 class="section-title">Principais patrocinadores e benchmarks</h2>
+          <p class="section-subtitle">
+            Cada bloco abaixo resume o papel da marca no festival sob a ótica de
+            <strong>experiência, live marketing e construção simbólica</strong>.
+          </p>
+        </div>
+
+        <div class="row g-4 mt-4">
+          <!-- Estácio -->
+          <div class="col-lg-6" data-aos="fade-up">
+            <article class="brand-card h-100">
+              <div class="brand-cover">
+                <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=1200&q=80" alt="Universidade e experiência educacional em evento" />
+                <span class="brand-badge badge-support">Apoiadora</span>
+              </div>
+              <div class="brand-body">
+                <h3>Universidade Estácio</h3>
+                <p>
+                  A Estácio se diferencia por usar o festival como plataforma de
+                  <strong>formação, oportunidade, pertencimento e empregabilidade</strong>.
+                  Sua força em Brand Experience está em transformar presença de marca
+                  em experiência acadêmica e profissional.
+                </p>
+                <div class="brand-tags">
+                  <span>Educação</span>
+                  <span>Carreira</span>
+                  <span>Experiência</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Itaú -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <article class="brand-card h-100">
+              <div class="brand-cover">
+                <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1200&q=80" alt="Festival com iluminação intensa e grande palco" />
+                <span class="brand-badge badge-master">Patrocinador Master</span>
+              </div>
+              <div class="brand-body">
+                <h3>Itaú</h3>
+                <p>
+                  Arquitetura de experiência em escala: pavilhão, benefícios, hospitalidade,
+                  ativação premium e presença funcional dentro da jornada do público.
+                </p>
+                <div class="brand-tags">
+                  <span>Premium</span>
+                  <span>Hospitalidade</span>
+                  <span>Arquitetura</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Heineken -->
+          <div class="col-lg-6" data-aos="fade-up">
+            <article class="brand-card h-100">
+              <div class="brand-cover">
+                <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=1200&q=80" alt="Festival noturno com luzes verdes e atmosfera vibrante" />
+                <span class="brand-badge badge-sponsor">Patrocinadora</span>
+              </div>
+              <div class="brand-body">
+                <h3>Heineken</h3>
+                <p>
+                  Une música, consumo ritual, entretenimento e sustentabilidade.
+                  A marca performa muito bem em experiências de alto impacto sensorial.
+                </p>
+                <div class="brand-tags">
+                  <span>Música</span>
+                  <span>Energia</span>
+                  <span>ESG</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Coca-Cola -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <article class="brand-card h-100">
+              <div class="brand-cover">
+                <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=1200&q=80" alt="Show ao vivo com plateia e atmosfera social" />
+                <span class="brand-badge badge-sponsor">Patrocinadora</span>
+              </div>
+              <div class="brand-body">
+                <h3>Coca-Cola</h3>
+                <p>
+                  Fortíssima em socialidade, música, convivência e estética pop.
+                  Seu território é o encontro cultural traduzido em experiência compartilhável.
+                </p>
+                <div class="brand-tags">
+                  <span>Convívio</span>
+                  <span>Pop Culture</span>
+                  <span>Música</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Seara -->
+          <div class="col-lg-6" data-aos="fade-up">
+            <article class="brand-card h-100">
+              <div class="brand-cover">
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80" alt="Experiência gastronômica em ambiente premium" />
+                <span class="brand-badge badge-sponsor">Patrocinadora</span>
+              </div>
+              <div class="brand-body">
+                <h3>Seara</h3>
+                <p>
+                  Atua com food experience, degustação e entretenimento culinário.
+                  A marca converte conveniência em experiência sensorial e autoral.
+                </p>
+                <div class="brand-tags">
+                  <span>Food Experience</span>
+                  <span>Sampling</span>
+                  <span>Sabor</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Ipiranga -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <article class="brand-card h-100">
+              <div class="brand-cover">
+                <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=80" alt="Lounge em evento com design contemporâneo" />
+                <span class="brand-badge badge-sponsor">Patrocinadora</span>
+              </div>
+              <div class="brand-body">
+                <h3>Ipiranga</h3>
+                <p>
+                  Leva para o festival a lógica da jornada: pausa, descanso, energia,
+                  conveniência e mobilidade emocional.
+                </p>
+                <div class="brand-tags">
+                  <span>Jornada</span>
+                  <span>Lounge</span>
+                  <span>Conveniência</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- KitKat -->
+          <div class="col-lg-6" data-aos="fade-up">
+            <article class="brand-card h-100">
+              <div class="brand-cover">
+                <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1200&q=80" alt="Público curtindo festival em ambiente pop" />
+                <span class="brand-badge badge-sponsor">Patrocinadora</span>
+              </div>
+              <div class="brand-body">
+                <h3>KitKat</h3>
+                <p>
+                  Transforma a pausa em conteúdo, irreverência e microexperiências
+                  de linguagem pop, creator economy e snackable culture.
+                </p>
+                <div class="brand-tags">
+                  <span>Break</span>
+                  <span>Creator Economy</span>
+                  <span>Fun</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Prudential -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <article class="brand-card h-100">
+              <div class="brand-cover">
+                <img src="https://images.unsplash.com/photo-1521335629791-ce4aec67dd53?auto=format&fit=crop&w=1200&q=80" alt="Experiência física e desafio em evento" />
+                <span class="brand-badge badge-sponsor">Patrocinadora</span>
+              </div>
+              <div class="brand-body">
+                <h3>Prudential</h3>
+                <p>
+                  Exemplo clássico de conversão de atributo abstrato em ação concreta:
+                  superação, coragem e proteção transformadas em experiência física.
+                </p>
+                <div class="brand-tags">
+                  <span>Desafio</span>
+                  <span>Superação</span>
+                  <span>Memória</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- TIM -->
+          <div class="col-lg-6" data-aos="fade-up">
+            <article class="brand-card h-100">
+              <div class="brand-cover">
+                <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=1200&q=80" alt="Tecnologia e experiência conectada em evento" />
+                <span class="brand-badge badge-sponsor">Patrocinadora</span>
+              </div>
+              <div class="brand-body">
+                <h3>TIM</h3>
+                <p>
+                  Sua força está em tornar tecnologia e conectividade visíveis,
+                  participativas e emocionais por meio de experiências ao vivo.
+                </p>
+                <div class="brand-tags">
+                  <span>5G</span>
+                  <span>Conectividade</span>
+                  <span>Tecnologia</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Natura -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <article class="brand-card h-100">
+              <div class="brand-cover">
+                <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80" alt="Beleza, natureza e experiência sensorial" />
+                <span class="brand-badge badge-sponsor">Patrocinadora</span>
+              </div>
+              <div class="brand-body">
+                <h3>Natura</h3>
+                <p>
+                  Cria contraste dentro da intensidade do festival ao oferecer
+                  sensorialidade, bem-estar, beleza e coerência com pautas ESG.
+                </p>
+                <div class="brand-tags">
+                  <span>Beleza</span>
+                  <span>Sensorial</span>
+                  <span>Regeneração</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Doritos -->
+          <div class="col-lg-6" data-aos="fade-up">
+            <article class="brand-card h-100">
+              <div class="brand-cover">
+                <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=1200&q=80" alt="Festival com luzes coloridas e atitude jovem" />
+                <span class="brand-badge badge-sponsor">Patrocinadora</span>
+              </div>
+              <div class="brand-body">
+                <h3>Doritos</h3>
+                <p>
+                  Une irreverência, expressão de estilo, experimentação e snack culture
+                  em ativações mais lúdicas, urbanas e visuais.
+                </p>
+                <div class="brand-tags">
+                  <span>Attitude</span>
+                  <span>Brand Entertainment</span>
+                  <span>Snack Culture</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Superbet -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <article class="brand-card h-100">
+              <div class="brand-cover">
+                <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80" alt="Área VIP e ambiente de entretenimento em festival" />
+                <span class="brand-badge badge-sponsor">Patrocinadora</span>
+              </div>
+              <div class="brand-body">
+                <h3>Superbet</h3>
+                <p>
+                  Explora gamificação, lounge, rooftop e entretenimento social para
+                  transformar familiaridade de marca em experiência de convivência.
+                </p>
+                <div class="brand-tags">
+                  <span>Gamificação</span>
+                  <span>Lounge</span>
+                  <span>Experiência Social</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- iFood -->
+          <div class="col-lg-6" data-aos="fade-up">
+            <article class="brand-card h-100">
+              <div class="brand-cover">
+                <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=80" alt="Diversão em parque e ambiente pop" />
+                <span class="brand-badge badge-sponsor">Patrocinadora</span>
+              </div>
+              <div class="brand-body">
+                <h3>iFood</h3>
+                <p>
+                  Sai do território do delivery e assume o papel de provedor de fluxo,
+                  conveniência, ritmo e entretenimento dentro do festival.
+                </p>
+                <div class="brand-tags">
+                  <span>Conveniência</span>
+                  <span>Velocidade</span>
+                  <span>Pop Experience</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- C&A -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <article class="brand-card h-100 brand-card-benchmark">
+              <div class="brand-cover">
+                <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1200&q=80" alt="Moda, juventude e festival" />
+                <span class="brand-badge badge-benchmark">Benchmark</span>
+              </div>
+              <div class="brand-body">
+                <h3>C&A</h3>
+                <p>
+                  Excelente benchmark de como moda pode operar no festival como
+                  identidade, utilidade e ocasião de uso, indo além do varejo tradicional.
+                </p>
+                <div class="brand-tags">
+                  <span>Moda</span>
+                  <span>Estilo</span>
+                  <span>Serviço</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Volkswagen -->
+          <div class="col-lg-6" data-aos="fade-up">
+            <article class="brand-card h-100 brand-card-benchmark">
+              <div class="brand-cover">
+                <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80" alt="Automóvel em cenário premium e inovador" />
+                <span class="brand-badge badge-benchmark">Benchmark</span>
+              </div>
+              <div class="brand-body">
+                <h3>Volkswagen</h3>
+                <p>
+                  Caso interessante de mobilidade, design e storytelling cultural,
+                  em que o produto automotivo ganha linguagem de lifestyle e inovação.
+                </p>
+                <div class="brand-tags">
+                  <span>Mobilidade</span>
+                  <span>Design</span>
+                  <span>Inovação</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="galeria" class="section-padding section-dark position-relative overflow-hidden">
+      <div class="container">
+        <div class="section-heading text-center mx-auto" data-aos="fade-up">
+          <span class="section-kicker">Galeria conceitual</span>
+          <h2 class="section-title">Moodboard visual do festival</h2>
+          <p class="section-subtitle">
+            As imagens abaixo ajudam a construir uma estética premium para o site.
+            Depois, você pode substituir por fotos oficiais específicas das marcas.
+          </p>
+        </div>
+
+        <div class="row g-4 mt-4">
+          <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+            <div class="gallery-card gallery-tall">
+              <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?auto=format&fit=crop&w=900&q=80" alt="Multidão em show noturno" />
+              <div class="gallery-overlay">
+                <span>Atmosfera</span>
+                <h3>Energia coletiva</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
+            <div class="gallery-card">
+              <img src="https://images.unsplash.com/photo-1505236858219-8359eb29e329?auto=format&fit=crop&w=900&q=80" alt="Luzes de festival e show ao vivo" />
+              <div class="gallery-overlay">
+                <span>Palco</span>
+                <h3>Espetáculo visual</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+            <div class="gallery-card">
+              <img src="https://images.unsplash.com/photo-1499364615650-ec38552f4f34?auto=format&fit=crop&w=900&q=80" alt="Público em evento de música" />
+              <div class="gallery-overlay">
+                <span>Social</span>
+                <h3>Convivência</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
+            <div class="gallery-card gallery-tall">
+              <img src="https://images.unsplash.com/photo-1496337589254-7e19d01cec44?auto=format&fit=crop&w=900&q=80" alt="Experiência imersiva em evento" />
+              <div class="gallery-overlay">
+                <span>Imersão</span>
+                <h3>Live marketing</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Insights -->
+    <section id="insights" class="section-padding">
+      <div class="container">
+        <div class="section-heading text-center mx-auto" data-aos="fade-up">
+          <span class="section-kicker">Insights estratégicos</span>
+          <h2 class="section-title">O que o festival ensina sobre marcas</h2>
+          <p class="section-subtitle">
+            Mais do que mídia, o Rock in Rio é uma plataforma de
+            <strong>presença experiencial</strong>.
+          </p>
+        </div>
+
+        <div class="row g-4 mt-4">
+          <div class="col-lg-4" data-aos="fade-up">
+            <div class="quote-card h-100">
+              <i class="bi bi-quote quote-icon"></i>
+              <p>
+                As marcas mais fortes não são necessariamente as que têm apenas o maior estande,
+                mas as que conseguem criar uma jornada memorável, útil e emocional.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="quote-card h-100">
+              <i class="bi bi-quote quote-icon"></i>
+              <p>
+                Brand Experience eficiente combina cenografia, interação, serviço,
+                conteúdo, hospitalidade e coerência simbólica.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="quote-card h-100">
+              <i class="bi bi-quote quote-icon"></i>
+              <p>
+                Em festivais, as marcas deixam de apenas falar sobre si e passam a
+                ocupar culturalmente o tempo, o corpo e a memória do público.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA / Conclusão -->
+    <section id="conclusao" class="section-padding conclusion-section">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-8" data-aos="fade-right">
+            <span class="section-kicker">Conclusão</span>
+            <h2 class="section-title mb-3">Do patrocínio à experiência de marca</h2>
+            <p class="conclusion-text mb-0">
+              O Rock in Rio 2026 deve consolidar uma lógica em que as marcas mais relevantes
+              não se limitam à visibilidade. Elas atuam como
+              <strong>plataformas de cultura, serviço, emoção, pertencimento e inovação</strong>.
+              Sob essa ótica, Estácio, Itaú, Heineken, Coca-Cola, Seara, Ipiranga, KitKat,
+              Prudential, TIM, Natura, Doritos, Superbet e iFood representam diferentes formas
+              de construir experiência. C&A e Volkswagen entram como benchmarks importantes
+              para ampliar o repertório do site.
+            </p>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-left">
+            <div class="cta-panel text-center">
+              <i class="bi bi-rocket-takeoff"></i>
+              <h3>Pronto para GitHub Pages</h3>
+              <p>
+                Basta salvar os arquivos, subir ao repositório e publicar.
+              </p>
+              <a href="#home" class="btn btn-brand rounded-pill px-4">
+                Voltar ao topo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-7">
+            <h3 class="footer-title">Brand Experience • Rock in Rio 2026</h3>
+            <p class="footer-text mb-0">
+              Site conceitual em HTML + CSS + Bootstrap, com visual premium, pronto para portfólio,
+              apresentação acadêmica e publicação no GitHub Pages.
+            </p>
+          </div>
+          <div class="col-lg-5">
+            <div class="footer-meta">
+              <span><i class="bi bi-code-slash"></i> Bootstrap 5</span>
+              <span><i class="bi bi-brush"></i> CSS customizado</span>
+              <span><i class="bi bi-phone"></i> Responsivo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap / AOS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        duration: 900,
+        once: true,
+        offset: 80
+      });
+
+      const progressBar = document.getElementById("scrollProgress");
+      const backToTop = document.getElementById("backToTop");
+
+      window.addEventListener("scroll", () => {
+        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const progress = (scrollTop / scrollHeight) * 100;
+        progressBar.style.width = progress + "%";
+
+        if (scrollTop > 500) {
+          backToTop.classList.add("show");
+        } else {
+          backToTop.classList.remove("show");
+        }
+      });
+
+      backToTop.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      });
+    </script>
+  </body>
+</html><!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sem título</title>
+</head>
+
+<body>
 </body>
 </html>

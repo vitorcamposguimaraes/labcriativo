@@ -129,7 +129,6 @@ a {
   left: 10%;
 }
 
-/* Navbar */
 .navbar-glass {
   background: rgba(7, 17, 31, 0.55);
   backdrop-filter: var(--blur);
@@ -213,7 +212,6 @@ a {
   box-shadow: 0 22px 40px rgba(83, 96, 255, 0.45);
 }
 
-/* Hero */
 .hero-section {
   min-height: 100vh;
   position: relative;
@@ -320,9 +318,9 @@ a {
 
 .hero-image {
     width: 100%;
-    height: 481px;
+    height: 464px;
     object-fit: cover;
-    transform: scale(1.01);
+    transform: scale(1.03);
 }
 
 .floating-card {
@@ -399,7 +397,6 @@ a {
   50% { transform: translateY(7px); }
 }
 
-/* Boxes */
 .insight-box,
 .quote-card,
 .axis-card,
@@ -450,7 +447,6 @@ a {
   margin: 0;
 }
 
-/* Axis cards */
 .axis-card {
   padding: 34px;
   min-height: 220px;
@@ -490,23 +486,12 @@ a {
   line-height: 1.8;
 }
 
-.axis-gradient-1 {
-  background: linear-gradient(135deg, #4e2cff, #0f6fff);
-}
-.axis-gradient-2 {
-  background: linear-gradient(135deg, #00a6ff, #00e1ff);
-}
-.axis-gradient-3 {
-  background: linear-gradient(135deg, #0ca678, #5ad97f);
-}
-.axis-gradient-4 {
-  background: linear-gradient(135deg, #ff7a18, #ffbf47);
-}
-.axis-gradient-5 {
-  background: linear-gradient(135deg, #ff3d77, #ff749d);
-}
+.axis-gradient-1 { background: linear-gradient(135deg, #4e2cff, #0f6fff); }
+.axis-gradient-2 { background: linear-gradient(135deg, #00a6ff, #00e1ff); }
+.axis-gradient-3 { background: linear-gradient(135deg, #0ca678, #5ad97f); }
+.axis-gradient-4 { background: linear-gradient(135deg, #ff7a18, #ffbf47); }
+.axis-gradient-5 { background: linear-gradient(135deg, #ff3d77, #ff749d); }
 
-/* Brand cards */
 .brand-card {
   overflow: hidden;
   border-radius: 30px;
@@ -618,7 +603,6 @@ a {
   font-weight: 700;
 }
 
-/* Gallery */
 .gallery-card {
   position: relative;
   overflow: hidden;
@@ -669,7 +653,6 @@ a {
   font-weight: 800;
 }
 
-/* Quotes */
 .quote-card {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid var(--line);
@@ -698,7 +681,6 @@ a {
   margin: 0;
 }
 
-/* Conclusion */
 .conclusion-section {
   background:
     radial-gradient(circle at 20% 20%, rgba(106, 92, 255, 0.16), transparent 28%),
@@ -739,7 +721,6 @@ a {
   margin-bottom: 18px;
 }
 
-/* Footer */
 .site-footer {
   padding: 40px 0 55px;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
@@ -761,7 +742,6 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  justify-content: lg-end;
 }
 
 .footer-meta span {
@@ -777,7 +757,6 @@ a {
   font-weight: 700;
 }
 
-/* Back to top */
 .back-to-top {
   position: fixed;
   right: 22px;
@@ -803,7 +782,6 @@ a {
   transform: translateY(0);
 }
 
-/* Responsive */
 @media (max-width: 1199.98px) {
   .hero-image {
     height: 620px;
@@ -830,7 +808,6 @@ a {
     background: rgba(5, 14, 28, 0.92);
     border: 1px solid rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(12px);
-
   }
 
   .gallery-tall {
@@ -874,10 +851,6 @@ a {
   .axis-card,
   .cta-panel {
     padding: 22px;
-  }
-
-  .footer-meta {
-    justify-content: flex-start;
   }
 }
 
